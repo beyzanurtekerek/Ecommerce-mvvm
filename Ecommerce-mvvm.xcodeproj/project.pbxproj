@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D803BDAF2DCD118000A4E612 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = D803BDAE2DCD118000A4E612 /* RxBlocking */; };
+		D803BDB12DCD118000A4E612 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D803BDB02DCD118000A4E612 /* RxBlocking-Dynamic */; };
+		D803BDB32DCD118000A4E612 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D803BDB22DCD118000A4E612 /* RxCocoa */; };
+		D803BDB52DCD118000A4E612 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D803BDB42DCD118000A4E612 /* RxCocoa-Dynamic */; };
+		D803BDB72DCD118000A4E612 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D803BDB62DCD118000A4E612 /* RxRelay */; };
+		D803BDBA2DCD11A700A4E612 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D803BDB92DCD11A700A4E612 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D883AA062DCBCF53008347A3 /* Ecommerce-mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ecommerce-mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D803BDBA2DCD11A700A4E612 /* Kingfisher in Frameworks */,
+				D803BDB72DCD118000A4E612 /* RxRelay in Frameworks */,
+				D803BDB52DCD118000A4E612 /* RxCocoa-Dynamic in Frameworks */,
+				D803BDB32DCD118000A4E612 /* RxCocoa in Frameworks */,
+				D803BDAF2DCD118000A4E612 /* RxBlocking in Frameworks */,
+				D803BDB12DCD118000A4E612 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,12 @@
 			);
 			name = "Ecommerce-mvvm";
 			packageProductDependencies = (
+				D803BDAE2DCD118000A4E612 /* RxBlocking */,
+				D803BDB02DCD118000A4E612 /* RxBlocking-Dynamic */,
+				D803BDB22DCD118000A4E612 /* RxCocoa */,
+				D803BDB42DCD118000A4E612 /* RxCocoa-Dynamic */,
+				D803BDB62DCD118000A4E612 /* RxRelay */,
+				D803BDB92DCD11A700A4E612 /* Kingfisher */,
 			);
 			productName = "Ecommerce-mvvm";
 			productReference = D883AA062DCBCF53008347A3 /* Ecommerce-mvvm.app */;
@@ -107,6 +128,10 @@
 			);
 			mainGroup = D883A9FD2DCBCF52008347A3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D803BDAD2DCD118000A4E612 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				D803BDB82DCD11A700A4E612 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D883AA072DCBCF53008347A3 /* Products */;
 			projectDirPath = "";
@@ -335,6 +360,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D803BDAD2DCD118000A4E612 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		D803BDB82DCD11A700A4E612 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D803BDAE2DCD118000A4E612 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D803BDAD2DCD118000A4E612 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		D803BDB02DCD118000A4E612 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D803BDAD2DCD118000A4E612 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		D803BDB22DCD118000A4E612 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D803BDAD2DCD118000A4E612 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D803BDB42DCD118000A4E612 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D803BDAD2DCD118000A4E612 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		D803BDB62DCD118000A4E612 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D803BDAD2DCD118000A4E612 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D803BDB92DCD11A700A4E612 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D803BDB82DCD11A700A4E612 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D883A9FE2DCBCF52008347A3 /* Project object */;
 }
